@@ -10,6 +10,10 @@ namespace _12345
     {
         static void Main(string[] args)
         {
+
+            #region Testy do kont
+
+            
             List<Konto> bank = new List<Konto>();
             bank.Add(new Konto("Zuzia", 500));
             bank.Add(new Konto("Basia", 600));
@@ -48,6 +52,20 @@ namespace _12345
             {
                 Console.WriteLine(konto);
             }
+            #endregion
+
+            #region testy do RORa
+
+            Console.WriteLine("Ile wpłacasz?");
+            double.TryParse(Console.ReadLine(), out double wplata);
+            ROR ror = new ROR();
+            ror.Wplata(wplata);
+            Console.WriteLine($"Wartość salda wynosi {ror.Saldo}");
+
+            #endregion
+
+
+
 
             Console.ReadKey();
             
