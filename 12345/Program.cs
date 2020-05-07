@@ -10,6 +10,8 @@ namespace _12345
     {
         static void Main(string[] args)
         {
+            List<Konto> bank = new List<Konto>();
+
         }
     }
 }
